@@ -188,3 +188,21 @@ html, body {
 #about #container-about #container-about-images img {
     margin: 0 40px
 }
+
+#contacts {
+    height: 100vh;
+}
+
+#contacts #container-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+}
+
+#contacts #container-contacts img {
+    width: 150px;
+    margin: 0 100px;
+}
