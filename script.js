@@ -31,7 +31,7 @@ function deleteH1(phrase) {
 
 function typeH1(phrase = 0) {
 
-    var titles = ['Lorem ipsum', 'is simply dummy text', 'of the printing and typesetting industry.'];
+    var titles = ["Welcome to my portfolio...", "I'm Matheus", 'web developer.'];
 
     if (phrase >= titles.length) {
         phrase = 0;

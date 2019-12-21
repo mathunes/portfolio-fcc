@@ -125,7 +125,7 @@ html, body {
     }
 
     #container-title #insertion-point {
-        height: 3px;
+        height: 25px;
     }
 }
 
@@ -309,11 +309,36 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 120px;
 }
 
 #contacts #container-contacts img {
+    margin-top: 150px;
     width: 150px;
-    margin: 0 100px;
+}
+
+@media (max-width: 800px) {
+    #contacts #container-contacts img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    #contacts #container-contacts img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    #contacts #container-contacts {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    #contacts #container-contacts img {
+        width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
