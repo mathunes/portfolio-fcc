@@ -161,7 +161,8 @@ html, body {
 #about #container-about #profile-img {
     border-radius: 100%;
     width: 200px;
-    border: 5px solid #FFFFFF
+    border: 5px solid #FFFFFF;
+    margin: 10px 0;
 }
 
 #about #container-about #description {
@@ -170,10 +171,20 @@ html, body {
     font-family: 'Share Tech', sans-serif;
     font-size: 18px;
     width: 345px;
+    margin: 10px 0;
 }
 
 #about #container-about h2 {
     font-family: 'Share Tech', sans-serif;
     font-size: 36px;
-    color: #FFFFFF
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+#about #container-about #container-about-images {
+    margin: 10px;
+}
+
+#about #container-about #container-about-images img {
+    margin: 0 40px
 }
