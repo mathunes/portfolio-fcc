@@ -107,13 +107,12 @@ html, body, ul {
 }
 
 #projects #container-projects {
-    height: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 20vh 0;
+    padding: 50px;
 }
 
 #projects #container-projects .project-tile {
