@@ -1,6 +1,7 @@
 html, body, ul {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background-color: #000000;
 }
 
@@ -79,4 +80,20 @@ html, body, ul {
 
 #welcome-section figure #laptop-img {
     margin: 50px auto;
+}
+
+#welcome-section footer {
+    background-color: #171515;
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#welcome-section footer img {
+    height: 30px;
+    margin: 0 50px;
 }
