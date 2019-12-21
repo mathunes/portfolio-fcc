@@ -1,11 +1,26 @@
-html, body, ul {
+html, body, ul, figure, h2, p {
     margin: 0;
     padding: 0;
     background-color: #000000;
 }
 
+html, body {
+    overflow: hidden;
+}
+
 #welcome-section header #navbar figure img {
     width: 300px;
+}
+
+#welcome-section header #navbar figure {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#welcome-section header {
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
 }
 
 #welcome-section header #navbar {
@@ -19,6 +34,28 @@ html, body, ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+}
+
+@media (max-width:1000px) {
+    #welcome-section header #navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #welcome-section header #navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #welcome-section header #navbar ul li a {
+        text-align: center;
+        font-size: 18px !important;
+    }
+
+    #welcome-section header #navbar figure img {
+        width: 250px;
+    }
 }
 
 #welcome-section header #navbar ul li {
@@ -35,19 +72,274 @@ html, body, ul {
 #welcome-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#welcome-section #welcome {
+#welcome-section #container-title {
     color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: lighter;
     text-align: center;
-    font-size: 36px;
-    
+    font-size: 28px;
+    margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+
+#container-title #insertion-point {
+    width: 5px;
+    height: 50px;
+    background-color: #FFFFFF;
+    margin: 0 10px;
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    #welcome-section #container-title {
+        font-size: 24px;
+    }
+
+    #container-title #insertion-point {
+        height: 40px;
+    }
+}
+
+@media (max-width: 680px) {
+    #welcome-section #container-title {
+        font-size: 20px;
+    }
+
+    #container-title #insertion-point {
+        height: 35px;
+    }
+}
+
+@media (max-width: 450px) {
+    #welcome-section #container-title {
+        font-size: 16px;
+    }
+
+    #container-title #insertion-point {
+        height: 25px;
+        width: 3px;
+    }
+}
+
+#container-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#welcome-section figure #laptop-img {
+    margin: 230px auto;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+#welcome-section footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #171515;
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#welcome-section footer a img {
+    height: 30px;
+    margin: 0 5vw;
+}
+
+#projects {
+    height: calc(100vh - 120px);
+    overflow: auto;
+}
+
+#projects #container-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+@media (max-width: 500px) {
+    #projects #container-projects {
+        margin-top: 50px;
+    }
+}
+
+#projects #container-projects .project-tile {
+    margin: 20px;
+}
+
+#projects #container-projects .project-tile figure {
+    width: 320px;
+    height: 160px;
+    border: 3px solid transparent;
+}
+
+#projects #container-projects .project-tile figure img {
+    width: 320px;
+    height: 160px;
+    border: 3px solid #FFFFFF;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+#about {
+    height: 100vh;
+}
+
+#about #container-about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+#about #container-about #profile-img {
+    border-radius: 100%;
+    width: 200px;
+    border: 5px solid #FFFFFF;
+    margin: 10px 0;
+}
+
+#about #container-about #description {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 18px;
+    width: 345px;
+    margin: 10px 0;
+}
+
+#about #container-about h2 {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+#about #container-about #container-about-images {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#about #container-about #container-about-images img {
+    margin: 0 2vw;
+}
+
+@media (max-width: 1100px) {
+    #about #container-about #profile-img {
+        width: 180px;
+    }
+
+    #about #container-about #container-about-images img {
+        width: 5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    #about #container-about h2 {
+        font-size: 32px;
+    }
+
+    #about #container-about {
+        padding: 180px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    #about #container-about #profile-img {
+        width: 150px;
+    }
+
+    #about #container-about #container-about-images img {
+        width: 8vw;
+    }
+}
+
+@media (max-width: 500px) {
+    #about #container-about #profile-img {
+        width: 120px;
+    }
+
+    #about #container-about h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 350px) {
+    #about #container-about #profile-img {
+        width: 100px;
+    }
+
+    #about #container-about {
+        margin: 0 20px;
+    }
+
+    #about #container-about #description {
+        font-size: 16px;
+    }
+}
+
+#contacts {
+    height: 100vh;
+}
+
+#contacts #container-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 120px;
+}
+
+#contacts #container-contacts img {
+    margin-top: 150px;
+    width: 150px;
+}
+
+@media (max-width: 800px) {
+    #contacts #container-contacts img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    #contacts #container-contacts img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    #contacts #container-contacts {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    #contacts #container-contacts img {
+        width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
