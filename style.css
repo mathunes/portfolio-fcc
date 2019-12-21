@@ -1,8 +1,11 @@
-html, body, ul {
+html, body, ul, figure {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #000000;
+}
+
+html, body {
+    overflow: hidden;
 }
 
 #welcome-section header #navbar figure img {
@@ -116,9 +119,9 @@ html, body, ul {
 }
 
 #projects #container-projects .project-tile {
-    width: 320px;
-    height: 160px;
-    background-color: #c4c4c4;
+    /* width: 320px;
+    height: 160px; */
+    /* background-color: #c4c4c4; */
     margin: 20px;
 }
 
@@ -126,4 +129,9 @@ html, body, ul {
     width: 300px;
     height: 100px;
     justify-self: last baseline;
+}
+
+#projects #container-projects .project-tile img {
+    width: 320px;
+    height: 160px;
 }
