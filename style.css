@@ -8,6 +8,15 @@ html, body, ul {
     width: 300px;
 }
 
+#welcome-section header #navbar figure {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#welcome-section header {
+    width: 100%;
+}
+
 #welcome-section header #navbar {
     display: flex;
     flex-direction: row;
@@ -35,18 +44,20 @@ html, body, ul {
 #welcome-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #welcome-section #container-title {
     color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: lighter;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -64,4 +75,8 @@ html, body, ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#welcome-section figure #laptop-img {
+    margin: 50px auto;
 }
