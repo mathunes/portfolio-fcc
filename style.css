@@ -36,6 +36,24 @@ html, body {
     list-style-type: none;
 }
 
+@media (max-width:1000px) {
+    #welcome-section header #navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #welcome-section header #navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #welcome-section header #navbar ul li a {
+        text-align: center;
+        font-size: 18px !important;
+    }
+}
+
 #welcome-section header #navbar ul li {
     margin: 0 50px;
 }
