@@ -93,7 +93,7 @@ html, body, ul {
     
 }
 
-#welcome-section footer img {
+#welcome-section footer a img {
     height: 30px;
     margin: 0 50px;
 }
