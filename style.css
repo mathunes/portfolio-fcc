@@ -119,9 +119,6 @@ html, body {
 }
 
 #projects #container-projects .project-tile {
-    /* width: 320px;
-    height: 160px; */
-    /* background-color: #c4c4c4; */
     margin: 20px;
 }
 
@@ -131,7 +128,15 @@ html, body {
     justify-self: last baseline;
 }
 
-#projects #container-projects .project-tile img {
+#projects #container-projects .project-tile figure {
     width: 320px;
     height: 160px;
+    border: 3px solid transparent;
 }
+
+#projects #container-projects .project-tile figure img {
+    width: 320px;
+    height: 160px;
+    border: 3px solid #FFFFFF;
+}
+
