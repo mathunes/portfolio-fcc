@@ -126,6 +126,7 @@ html, body {
 
     #container-title #insertion-point {
         height: 25px;
+        width: 3px;
     }
 }
 
