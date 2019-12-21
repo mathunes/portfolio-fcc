@@ -102,17 +102,29 @@ html, body, ul {
 }
 
 #projects {
-    height: 100vh;
+    height: calc(100vh - 120px);
+    overflow: auto;
+}
+
+#projects #container-projects {
+    height: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 20vh 0;
 }
 
-#projects .project-tile {
-    width: 350px;
-    height: 200px;
+#projects #container-projects .project-tile {
+    width: 300px;
+    height: 150px;
     background-color: #c4c4c4;
-    margin: 10px 50px;
+    margin: 20px;
+}
+
+#projects #container-projects #see-more {
+    width: 300px;
+    height: 100px;
+    justify-self: last baseline;
 }
