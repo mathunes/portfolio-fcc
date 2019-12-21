@@ -125,7 +125,7 @@ html, body {
     }
 
     #container-title #insertion-point {
-        height: 30px;
+        height: 3px;
     }
 }
 
@@ -157,7 +157,7 @@ html, body {
 
 #welcome-section footer a img {
     height: 30px;
-    margin: 0 50px;
+    margin: 0 5vw;
 }
 
 #projects {
